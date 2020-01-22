@@ -10,8 +10,10 @@
 
 Install node.js
 
+New terminal session at images-scraper
+
 ```
-npm install images-scraper
+npm install
 ```
 
 Set Image Search Options in run.js

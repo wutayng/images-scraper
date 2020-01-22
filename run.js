@@ -20,7 +20,7 @@ var fs = require('fs');
 
 let google = new Scraper.Google({
 	keyword: search_word,
-	limit: 200,
+	limit: 100,
 	resolution: 'l', // Resolution of Image Param
 	puppeteer: {
 		headless: false
