@@ -9,13 +9,17 @@
 ## To Run
 
 Install node.js
-'''
+
+```
 npm install images-scraper
-'''
+```
+
 Set Image Search Options in run.js
-'''
+
+```
 node run.js search_word /path/to/output/dir/
-'''
+```
+
 Outputs a folder titled 'search_word' of .png images at output dir
 
 ---
