@@ -1,10 +1,12 @@
 'use strict'
 
+var args_in = process.argv.slice(2);
+
 var Scraper = require ('./index');
-var search_word = 'banana'
+var search_word = args_in[0]
 
 //Set Output dir
-var output_dir = '/Users/warrentaylor/Desktop/data/images/'.concat(search_word)
+var output_dir = args_in[1].concat(search_word)
 var output_files_prefix = output_dir.concat('/')
 
 var mkdirp = require('mkdirp');
@@ -18,7 +20,7 @@ var fs = require('fs');
 
 let google = new Scraper.Google({
 	keyword: search_word,
-	limit: 50,
+	limit: 200,
 	resolution: 'l', // Resolution of Image Param
 	puppeteer: {
 		headless: false
@@ -28,7 +30,7 @@ let google = new Scraper.Google({
     isz: undefined,	 				// options: l(arge), m(edium), i(cons), etc. 
     itp: undefined, 				// options: clipart, face, lineart, news, photo
 		ic: undefined, 					// options: color, gray, trans
-		sur: undefined,					// options: fmc (commercial reuse with modification), fc (commercial reuse), fm (noncommercial reuse with modification), f (noncommercial reuse)
+		sur: 'fc',					// options: fmc (commercial reuse with modification), fc (commercial reuse), fm (noncommercial reuse with modification), f (noncommercial reuse)
   }
 });
 

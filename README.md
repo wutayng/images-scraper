@@ -2,9 +2,21 @@
 
 # fork edits -
 
+-   Command Line Integration
 -   example.js is now run.js
--   run.js automatically downloads images scraped to output_dir (img 'name' is img 'title' from scrape)
--   reformat all images to .png
+-   Automatically reformat all images to .png
+
+## To Run
+
+Install node.js
+'''
+npm install images-scraper
+'''
+Set Image Search Options in run.js
+'''
+node run.js search_word /path/to/output/dir/
+'''
+Outputs a folder titled 'search_word' of .png images at output dir
 
 ---
 
