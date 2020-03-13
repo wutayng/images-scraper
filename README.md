@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.com/pevers/images-scraper.svg?branch=master)](https://travis-ci.com/pevers/images-scraper)
 
+# Practical Use
+If you want to scrape google images, don't use this. Use this chrome app: [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm)
+
 # fork edits -
 
 -   Command Line Integration
